@@ -18,7 +18,7 @@ const Register = () => {
    const handelSubmit = async (e) => {
      e.preventDefault();  // page refresh nahi hoga
      try {
-       const res = await axios.post(`/api/v1/auth/register`, {
+       const res = await axios.post(`https://ecommerce-zeta-liart.vercel.app/api/v1/auth/register`, {
          name,
          email,
          password,
